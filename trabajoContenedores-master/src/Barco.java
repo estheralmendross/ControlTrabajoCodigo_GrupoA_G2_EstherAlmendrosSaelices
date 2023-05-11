@@ -115,9 +115,9 @@ public class Barco {
     public String muestraBasePrioridad ( int prioridad){
         String resultado ="";
         for (int c = 0; c < COLUMNAS; c++) {
-            if (contenedor[0][c] != null){
-                if (contenedor[0][c].getPrioridad() == prioridad){
-                    resultado = resultado + contenedor[0][c].muestraDatos();
+            if (contenedor[9][c] != null){
+                if (contenedor[9][c].getPrioridad() == prioridad){
+                    resultado = resultado + contenedor[9][c].muestraDatos();
                 }
             }
         }
