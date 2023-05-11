@@ -107,6 +107,24 @@ public class Barco {
         return cantidad;
     }
 
+
+
+    //EXÁMEN
+    //mostrar los contenedores con una misma prioridad en la base
+
+    public String muestraBasePrioridad ( int prioridad){
+        String resultado ="";
+        for (int c = 0; c < COLUMNAS; c++) {
+            if (contenedor[0][c] != null){
+                if (contenedor[0][c].getPrioridad() == prioridad){
+                    resultado = resultado + contenedor[0][c].muestraDatos();
+                }
+            }
+        }
+        return resultado;
+    }
+
+
 }
 
 

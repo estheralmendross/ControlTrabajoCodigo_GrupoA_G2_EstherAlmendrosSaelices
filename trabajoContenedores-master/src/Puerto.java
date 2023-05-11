@@ -43,4 +43,18 @@ public class Puerto {
     public void setIndice(int indice) {
         this.indice = indice;
     }
+
+
+    //EXÁMEN DEL TRABAJO
+    //La funcion muestraBasePrioridad pero que funcione para todos los hubs del puerto (es decir, en los 3 hubs)
+    public String muestraBasePrioridad (int prioridad){
+        String resultado = "";
+        for (int i = 0; i < 3; i++) {
+            resultado = resultado + puerto[i].muestraBasePrioridad(prioridad);
+        }
+        if (resultado==""){
+            resultado="No hay contenedores con prioridad "+prioridad;
+        }
+        return resultado;
+    }
 }

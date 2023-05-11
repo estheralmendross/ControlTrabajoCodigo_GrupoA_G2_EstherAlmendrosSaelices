@@ -85,4 +85,19 @@ public class Contenedor {
         this.empresa_que_recibe = empresa_que_recibe;
     }
 
+    //EXÁMEN DEL TRABAJO
+    //Método que nos muestre el id, empresa que recibe, peso y el estado del chequeo en la aduana
+
+    public String muestraDatos (){
+        String resultado = "\nID: "+this.identificador+"\nEmpresa remitente: "+this.empresa_que_envia+"\nPeso: "+this.peso;
+        if (this.aduanas){
+            resultado += "\nHa sido inspeccionado por el control de aduanas";
+        }
+        else {
+            resultado += "\nNo ha sido inspeccionado por el control de aduanas";
+
+        }
+        return resultado;
+    }
+
 }
